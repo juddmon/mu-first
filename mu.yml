@@ -1,0 +1,12 @@
+environments:
+- name: acceptance
+- name: production
+service:
+  name: mu-first
+  port: 80
+  pathPatterns:
+  - /*
+  pipeline:
+    source:
+      provider: GitHub
+      repo: juddmon/mu-first
